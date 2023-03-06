@@ -1,0 +1,191 @@
+/*Names: Palesa Christina 
+    Surname: Lits'iba
+    Trainee ID: 22619*/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background-image: url(images/tech.jpeg);
+    background-size: cover;
+    /*background-image: linear-gradient(to right, #5c677d, #7d8597,#979dac);*/
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight:bold;
+    color: antiquewhite;
+}
+
+.contact .content p{
+    font-weight: 300;
+    color: antiquewhite;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: antiquewhite;
+    flex-direction: column;
+    font-weight: 500;
+    text-shadow: #463f3a;
+    box-shadow: #a9d6e5;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: aqua;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #ade8f4;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #463f3a;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #463f3a;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #463f3a;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #461220;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #0077b6;
+    color: antiquewhite;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+.topnav {
+    background-color: #2a6f97;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: left;
+    color:#a9d6e5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:#a9d6e5;
+    color:#2a6f97;
+  }
+  
+  .topnav a.active {
+    background-color:#61a5c2;
+    color: white;
+  }
